@@ -1,0 +1,36 @@
+.user-header {
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 100%;
+}
+.user-follows {
+    float: right;
+    width: 30%;
+    display: block;
+    margin-top: -180px;
+}
+.followers-list {
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.following-list {
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.user-header_content {
+    margin-top: 20px !important;
+    display: block;
+    float: left;
+}
+.user-information {
+    width: 50%;
+}
+
+.users-list_header {
+    margin-bottom: -10px !important;
+    margin-top: 10px !important;
+}

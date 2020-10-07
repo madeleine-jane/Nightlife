@@ -1,0 +1,143 @@
+<!--SEMANTIC UI-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.min.js"></script>
+
+<!--FILEPOND-->
+<link href="../filepond/filepond-master/dist/filepond.css" rel="stylesheet">
+<script src="../filepond-plugin-file-encode/filepond-plugin-file-encode-master/dist/filepond-plugin-file-encode.js"></script>
+<script src="../filepond/filepond-master/dist/filepond.js"></script>
+<script>
+FilePond.registerPlugin(FilePondPluginFileEncode);
+</script>
+
+<!--AWS SDK-->
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/apigClient.js"></script>
+
+
+
+<!--ALL MODELS-->
+<script src = "../models/user.js"></script>
+<script src = "../models/currentUser.js"></script>
+<script src = "../models/status/status.js"></script>
+<script src = "../models/status/element/element.js"></script>
+<script src = "../models/status/element/hashtag.js"></script>
+<script src = "../models/status/element/url.js"></script>
+<script src = "../models/status/element/userMention.js"></script>
+<script src = "../models/status/element/attachment/image.js"></script>
+<script src = "../models/status/element/attachment/audio.js"></script>
+<script src = "../models/status/element/attachment/attachment.js"></script>
+<script src = "../models/statusCollection/statusCollection.js"></script>
+<script src = "../models/statusCollection/story.js"></script>
+<script src = "../models/statusCollection/feed.js"></script>
+
+<!--ALL PROXIES-->
+<script src = "../proxy/change_profile_pic_proxy.js"></script>
+<script src = "../proxy/follow_proxy.js"></script>
+<script src = "../proxy/status_proxy.js"></script>
+<script src = "../proxy/get_user_data_proxy.js"></script>
+<script src = "../proxy/sign_in_proxy.js"></script>
+<script src = "../proxy/sign_up_proxy.js"></script>
+
+<!--ALL PRESENTERS-->
+<script src = "../presenters/create_post_presenter.js"></script>
+<script src = "../presenters/current_user_presenter.js"></script>
+<script src = "../presenters/mentions_presenter.js"></script>
+<script src = "../presenters/profile_presenter.js"></script>
+<script src = "../presenters/sign_in_presenter.js"></script>
+<script src = "../presenters/status_presenter.js"></script>
+<script src = "../presenters/story_feed_presenter.js"></script>
+
+<!--ALL GLOBALS-->
+<script src = "../proxy/global_proxies.js"></script>
+<script src = "../views/js/globalPresenters.js"></script>
+
+
+<!--MAIN VIEW-->
+<script src="./js/sign_in_view.js"></script>
+
+<!--COMPONENTS-->
+<script src = "./js/components/upload_attachments.js"></script>
+
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="../css/sign_in.css" />
+<link rel="stylesheet" type="text/css" href="../css/site.css" />
+<link rel="stylesheet" type="text/css" href="../../semantic/dist/semantic.min.css">
+
+
+<div id="main_content">
+    <div class="centered ui grid main-section login">
+        <div class="header row ui grid">
+            <div class="header__icon-spacing row">
+                <i class="huge paw icon header__icon"></i>
+
+            </div>
+            <div class="header__title row">
+                Cat Chat
+            </div>
+        </div>
+        <div class="login row">
+            <form class="ui form login__form">
+                <div class="field">
+                    <input type="text" id="login_username" placeholder="Username">
+                </div>
+                <div class="field">
+                    <input type="password" id="login_password" placeholder="Password">
+                </div>
+                <button class="ui disabled button" id="login-btn" type="button" onclick="login()">Log In</button>
+                <div class="field">
+                    <div class="sign_up_link" onclick="toggleSignUp()">New? Sign Up</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="centered ui grid main-section sign_up">
+        <div class="header row ui grid">
+            <i class="arrow left icon sign_up__back-icon" onclick="toggleSignUp()"></i>
+            <div class="header__title row">
+                Sign Up
+            </div>
+        </div>
+        <div class="sign_up row">
+            <form class="ui form sign_up__form">
+                <div class="field">
+                    <input type="text" id="first_name" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <input type="text" id="last_name" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <input type="text" id="sign_up_username" placeholder="Username">
+                </div>
+                <div class="field">
+                    <input type="password" id="sign_up_password" placeholder="Password">
+                </div>
+                <div class="field">
+                    <div class = "error_msg"></div>
+                    <button class="ui mini button upload_img" type="button" onclick="$('.image-upload-modal')
+                        .modal('show')
+                      ">Upload
+                        Image</button>
+                </div>
+                <button class="ui disabled button" type="button" id="signup-btn" onclick="register()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class = "ui modal image-upload-modal">
+    <div class="content image-modal_content">
+        <input type="file">
+        <button class = "ui button submit_image" onclick = "uploadImage()">Upload Image</button>
+    </div>
+</div>

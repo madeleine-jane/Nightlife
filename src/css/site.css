@@ -1,0 +1,7 @@
+#main_content {
+    height: fit-content;
+    min-height: 100%;
+}
+.cat-img {
+    width: 400px;
+}

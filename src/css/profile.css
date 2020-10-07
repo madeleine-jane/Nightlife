@@ -1,0 +1,44 @@
+.profile-follow-data {
+    display: flex;
+    height: 52%;
+}
+.profile-followers {
+    flex: .5;
+}
+.profile-follows {
+    flex: .5;
+}
+.profile-pic {
+    object-fit: cover;
+    object-position: center center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.profile-header {
+    text-align: center;
+    margin-top: 40px;
+}
+.users-list_section {
+    width: 50%;
+    height: 10%;
+    margin: 0 auto !important;
+}
+.users-list_header {
+    margin: auto;
+}
+.users-list {
+    height: 200px;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.image-edit-icon {
+    margin-left: 120px !important;
+}

@@ -1,0 +1,100 @@
+<!--SEMANTIC UI-->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.min.js"></script>
+
+<!--FILEPOND-->
+<link href="../filepond/filepond-master/dist/filepond.css" rel="stylesheet">
+<script src="../filepond-plugin-file-encode/filepond-plugin-file-encode-master/dist/filepond-plugin-file-encode.js"></script>
+<script src="../filepond/filepond-master/dist/filepond.js"></script>
+<script>
+FilePond.registerPlugin(FilePondPluginFileEncode);
+</script>
+
+<!--AWS SDK-->
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+<script type="text/javascript" src="../../res/sdk/apiGateway-js-sdk/apigClient.js"></script>
+
+
+<!--ALL MODELS-->
+<script src = "../models/user.js"></script>
+<script src = "../models/currentUser.js"></script>
+<script src = "../models/status/status.js"></script>
+<script src = "../models/status/element/element.js"></script>
+<script src = "../models/status/element/hashtag.js"></script>
+<script src = "../models/status/element/url.js"></script>
+<script src = "../models/status/element/userMention.js"></script>
+<script src = "../models/status/element/attachment/image.js"></script>
+<script src = "../models/status/element/attachment/audio.js"></script>
+<script src = "../models/status/element/attachment/attachment.js"></script>
+<script src = "../models/statusCollection/statusCollection.js"></script>
+<script src = "../models/statusCollection/story.js"></script>
+<script src = "../models/statusCollection/feed.js"></script>
+
+<!--ALL PROXIES-->
+<script src = "../proxy/change_profile_pic_proxy.js"></script>
+<script src = "../proxy/follow_proxy.js"></script>
+<script src = "../proxy/status_proxy.js"></script>
+<script src = "../proxy/get_user_data_proxy.js"></script>
+<script src = "../proxy/sign_in_proxy.js"></script>
+<script src = "../proxy/sign_up_proxy.js"></script>
+
+<!--ALL PRESENTERS-->
+<script src = "../presenters/create_post_presenter.js"></script>
+<script src = "../presenters/current_user_presenter.js"></script>
+<script src = "../presenters/mentions_presenter.js"></script>
+<script src = "../presenters/profile_presenter.js"></script>
+<script src = "../presenters/sign_in_presenter.js"></script>
+<script src = "../presenters/status_presenter.js"></script>
+<script src = "../presenters/story_feed_presenter.js"></script>
+
+<script src = "../proxy/global_proxies.js"></script>
+<script src = "../views/js/globalPresenters.js"></script>
+<script src = "../models/globalModels.js"></script>
+
+<!--MAIN VIEW-->
+<script src = "./js/story_feed_view.js"></script>
+
+<!--COMPONENTS-->
+<script src = "./js/components/nav_menu.js"></script>
+<script src = "./js/components/create_post.js"></script>
+<script src = "./js/components/story_display.js"></script>
+<script src = "./js/components/status_display.js"></script>
+<script src = "./js/components/upload_attachments.js"></script>
+
+<!--CSS-->
+<link rel = "stylesheet" type = "text/css" href = "../css/main_feed.css" />
+<link rel = "stylesheet" type = "text/css" href = "../css/site.css" />
+<link rel = "stylesheet" type = "text/css" href = "../css/nav_menu.css" />
+<link rel = "stylesheet" type = "text/css" href = "../css/create_post.css" />
+<link rel = "stylesheet" type = "text/css" href = "../css/post_feed.css" />
+<link rel="stylesheet" type="text/css" href="../../semantic/dist/semantic.min.css">
+
+<div id = "main_content">
+  <div id = "sidebar-section"></div>
+  <div id = "main-section">
+    <div id = "feed-section_container">
+      <div id = "create-post-section"></div>
+      <div id = "feed-display"></div>
+    </div>
+  </div>
+</div>
+<div class = "ui modal upload-modal">
+  <div class="content modal_content">
+    <input type="file">
+    <br>
+    <button class = "ui button submit_image" onclick = "uploadImage()">Upload Image</button>
+    <button class = "ui button submit_txt" onclick = "uploadTxt()">Upload Text Document</button>
+  </div>
+</div>

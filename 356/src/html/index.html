@@ -1,0 +1,780 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv='X-UA-Compatible' content='IE=100; IE=9; IE=8'>-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=1">
+
+    <title>Special Collections | Services | HBLL</title>
+
+    <link rel="stylesheet" href="../css/main-page.css" type="text/css">
+    <link rel="stylesheet" href="../css/main-page-browse.css" type="text/css">
+
+
+    <!--[if lt IE 9]>
+<script src='https://media.lib.byu.edu/assets/js/html5shiv/html5shiv-1.0.js'></script>
+<![endif]-->
+
+    <script type="text/javascript" charset="utf-8">document.domain = 'lib.byu.edu'; siteDomain = 'lib.byu.edu';</script>
+    <script src="https://media.lib.byu.edu/assets/js/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="https://media.lib.byu.edu/assets/js/loader/hbll-4.0,search-3.0.12,nav-3.0.3,formspackage-1.3" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        // Feedback form
+        $(document).ready(function () {
+            $("#30000").initForm('We will get back to you shortly. Thanks!');
+            $("#90001").initForm('Thank you for your feedback!');
+        });
+    </script>
+
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="https://lib.byu.edu/favicon.ico?v2">
+    <link rel="apple-touch-icon" href="https://lib.byu.edu/apple-touch-icon.png?v2">
+    <link rel="apple-touch-icon-precomposed" href="https://lib.byu.edu/apple-touch-icon.png?v2">
+</head>
+
+<body class=" service-area">
+    <div class="global">
+        <nav class="g-nav" role="navigation">
+            <div id="materials" class="flank left">
+                <div class="inner">
+                    <h2>Materials</h2>
+
+                    <ul class="menu guides">
+                        <li><a class="guide" href="//lib.byu.edu/guides/"><span class="icon-compass left"></span>
+                                Guides <span class="icon-compass right"></span></a></li>
+                    </ul>
+
+                    <ul class="menu sets">
+                        <li><a class="set" href="//lib.byu.edu/databases/"><span class="icon-stack left"></span>
+                                Databases <span class="icon-stack right"></span></a></li>
+                        <li><a class="set" href="//lib.byu.edu/journals/"><span class="icon-books left"></span>
+                                Journals <span class="icon-books right"></span></a></li>
+                        <li><a class="set" href="//lib.byu.edu/collections/"><span class="icon-drawer left"></span>
+                                Collections <span class="icon-drawer right"></span></a></li>
+                    </ul>
+
+                    <ul class="menu formats">
+                        <li id="all"><a class="format" href="//lib.byu.edu/formats/"><span class="icon-grid"></span>
+                                Formats</a></li>
+                        <li><a class="format" href="//lib.byu.edu/articles/"><span class="icon-file"></span> Articles</a></li>
+                        <li><a class="format" href="//lib.byu.edu/books/"><span class="icon-book"></span> Books</a></li>
+                        <li><a class="format" href="//lib.byu.edu/audio/"><span class="icon-headphones"></span> Audio</a></li>
+                        <li><a class="format" href="//lib.byu.edu/video/"><span class="icon-camera"></span> Video</a></li>
+                        <li><a class="format" href="//lib.byu.edu/formats/"><span class="icon-arrow-right"></span> More</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="info" class="flank right">
+                <div class="inner">
+                    <h2>Help &amp; Info</h2>
+
+                    <ul class="menu contact">
+                        <li><a class="help" href="//lib.byu.edu/chat/?url=https://lib.byu.edu/special-collections/"><span
+                                    class="icon-bubbles"></span> Chat</a></li>
+                        <li class="has-subitem">
+                            <a class="help" href="#"><span class="icon-envelope"></span> Email</a>
+                            <div class="subitem">
+                                <form id="30000" class="form" method="post" action="//lib.byu.edu/chewbacca/kashyyyk/"
+                                    novalidate="novalidate">
+                                    <div class="field">
+                                        <label for="Name"><span class="icon-user"></span> <span class="text">Your name</span></label>
+                                        <input id="Name" type="text" tabindex="2" name="Name">
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="Email"><span class="icon-envelope"></span> <span class="text">Your
+                                                email address</span></label>
+                                        <input id="Email" type="email" tabindex="3" name="Email">
+                                    </div>
+
+                                    <div class="field message">
+                                        <pre><span></span><br></pre>
+                                        <label for="Question"><span class="icon-bubble"></span> <span class="text">Your
+                                                question/comment</span><span class="req"> *</span></label>
+                                        <textarea id="Question" class="required" tabindex="4" name="Question" cols="80"
+                                            rows="10"></textarea>
+                                    </div>
+
+                                    <div class="field dropdown">
+                                        <label for="Status"><span class="icon-profile"></span> <span class="text">Your
+                                                status</span> <span class="arrow">〉</span></label>
+                                        <select id="Status" tabindex="5" name="Status" class="text">
+                                            <option selected="selected"></option>
+                                            <option>Undergraduate</option>
+                                            <option>Graduate student</option>
+                                            <option>Faculty</option>
+                                            <option>Staff</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <label for="frodo-email">Leave this blank</label>
+                                        <input id="frodo-email" type="text" name="::frodo">
+                                        <label for="bilbo-email">Don't change this</label>
+                                        <input id="bilbo-email" type="text" value="http://" name="::bilbo">
+                                        <input type="hidden" name="IP Address" value="10.37.246.51">
+                                    </div>
+
+                                    <input tabindex="6" type="submit" value="Send">
+                                    <input type="hidden" name="::recipient" value="30000">
+                                </form>
+                                <div class="success_message" style="display:none;">We will get back to you shortly.
+                                    Thanks!</div>
+                            </div>
+                        </li>
+                        <li class="has-subitem">
+                            <a class="help" href="#"><span class="icon-phone"></span> Phone</a>
+                            <div id="call_number" class="subitem number">
+                                <ul>
+                                    <li><span class="heading">Call</span> (801) 422-2927</li>
+                                    <li><span class="heading">Text</span> (801) 623-6838</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="//lib.byu.edu/directory/"><span class="icon-librarian"></span> Directory</a></li>
+                        <li><a href="//lib.byu.edu/faq/"><span class="icon-question"></span> FAQ</a></li>
+                    </ul>
+
+                    <ul class="menu info">
+                        <li><a class="info" href="//lib.byu.edu/services/"><span class="icon-attachment"></span>
+                                Services </a></li>
+                        <li><a class="info" href="//lib.byu.edu/places/"><span class="icon-location"></span> Places</a></li>
+                        <li><a class="info" href="//lib.byu.edu/events/"><span class="icon-calendar"></span> Events</a></li>
+                        <li><a class="info" href="//lib.byu.edu/about/"><span class="icon-info"></span> About</a></li>
+                    </ul>
+
+                    <ul class="menu feedback">
+                        <li class="feedback has-subitem">
+                            <a class="help" href="#"><span class="icon-thumbs-up"></span> Feedback</a>
+                            <div class="subitem">
+                                <form id="90001" class="form" method="post" action="//lib.byu.edu/chewbacca/yavin/"
+                                    novalidate="novalidate">
+                                    <div class="field">
+                                        <label for="name"><span class="icon-user"></span> <span class="text">Name</span></label>
+                                        <input id="name" type="text" name="Name">
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="email"><span class="icon-envelope"></span> <span class="text">Email
+                                                address</span></label>
+                                        <input id="email" type="email" name="Email">
+                                    </div>
+
+                                    <div class="field message">
+                                        <pre><span></span><br></pre>
+                                        <label for="comment"><span class="icon-bubble"></span> <span class="text">Feedback</span><span
+                                                class="req"> *</span></label>
+                                        <textarea id="comment" class="required" name="Comment" cols="80" rows="10"></textarea>
+                                    </div>
+
+                                    <div class="field dropdown">
+                                        <label for="feedbackStatus"><span class="icon-profile"></span> <span class="text">Status
+                                            </span> <span class="arrow">〉</span><span class="req"> *</span></label>
+                                        <select id="feedbackStatus" name="Status" class="required">
+                                            <option selected="selected"></option>
+                                            <option>Undergraduate</option>
+                                            <option>Graduate</option>
+                                            <option>Faculty</option>
+                                            <option>Staff</option>
+                                            <option>Library Employee</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="field note">The URL of the current page will be sent with your
+                                        feedback.</div>
+
+                                    <div class="hidden">
+                                        <label for="frodo-feedback">Leave this blank</label>
+                                        <input id="frodo-feedback" type="text" name="::frodo">
+                                        <label for="bilbo-feedback">Don't change this</label>
+                                        <input id="bilbo-feedback" type="text" value="http://" name="::bilbo">
+                                    </div>
+
+                                    <input tabindex="6" type="submit" name="::Submit" value="Send">
+                                    <input type="hidden" name="::recipient" value="90001">
+                                </form>
+                                <div class="success_message" style="display:none;">Thank you for your feedback!</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="mask"></div>
+
+            <header class="g-header" role="banner">
+                <div class="container">
+                    <a class="icon-menu nav-trigger" href=""><span class="hidden">Menu</span></a>
+                    <h1><a href="//lib.byu.edu"><img class="logo" src="https://media.lib.byu.edu/assets/images/hbll/4.0/byu-hbll-logo-full.svg"
+                                alt="HBLL Logo"></a></h1>
+
+                    <a class="login" href="/account/login/">Login</a>
+
+                </div>
+            </header>
+
+
+            <section class="main" role="main" aria-label="Main content area">
+                <header class="m-header background top has-desc service">
+                    <div class="backgroundimg" style="background-image: url(https://media.lib.byu.edu/assets/images/special-collections/background.png)"></div>
+                    <div class="container">
+
+
+
+                        <h1 class="title">Special Collections</h1>
+
+                        <p class="desc">The L. Tom Perry Special Collections preserves and houses materials requiring
+                            great care to protect them and ensure their proper long-term use</p>
+
+
+                        <ul class="info-bar group">
+                            <li>
+                                <a href="#hours"><i class="icon-clock"></i> <span class="label">Hours</span></a>
+                                <div id="hours" class="panel">
+                                    <section>
+                                        <h3>Hours</h3>
+                                        <ul>
+                                            <li class="highlight"><span class="label">M</span>
+                                                8 am – 9 pm
+                                            </li>
+                                            <li><span class="label">T</span>
+                                                8 am – 9 pm&thinsp;*
+                                            </li>
+                                            <li><span class="label">W</span>
+                                                8 am – 9 pm
+                                            </li>
+                                            <li><span class="label">T</span>
+                                                8 am – 9 pm
+                                            </li>
+                                            <li><span class="label">F</span>
+                                                8 am – 6 pm
+                                            </li>
+                                            <li><span class="label">S</span>
+                                                10 am – 6 pm
+                                            </li>
+                                            <li><span class="label">S</span>
+                                                Closed
+                                            </li>
+                                        </ul>
+
+                                        <p class="sub devotional"><i>*&thinsp;Closed for devotional 10:45 am – 12:15 pm</i></p>
+
+                                        <p class="sub"><a href="/about/hours/">See main library hours →</a></p>
+                                    </section>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#availableat"><i class="icon-location"></i> <span class="label">Location</span></a>
+                                <div id="availableat" class="panel">
+                                    <section>
+                                        <h3>Level 1</h3> <a class="base-link" href="https://floormaps.lib.byu.edu/#1130">View
+                                            on map →</a>
+                                    </section>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#contact"><i class="icon-bubble"></i> <span class="label">Contact</span></a>
+                                <div id="contact" class="panel">
+                                    <section class="contact">
+                                        <h3>Contact Special Collections</h3>
+                                        <ul>
+                                            <li class="chat"><a href="//lib.byu.edu/chat/?queue=hbll_special_collections&amp;url=https://lib.byu.edu/special-collections/">Start
+                                                    Live Chat</a></li>
+                                            <li class="email"><a href="mailto:specialcollections@byu.edu" title="specialcollections@byu.edu">specialcollections@byu.edu</a></li>
+                                            <li>(801) 422-3175</li>
+                                        </ul>
+                                    </section>
+
+
+                                    <section class="staff">
+                                        <h3>Staff</h3>
+                                        <ul>
+
+                                            <li><a href="/directory/special-collections/">View in Directory</a> <span
+                                                    class="desc"></span></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="https://sites.lib.byu.edu/special-collections/"><i class="icon-link"></i>
+                                    <span class="label">Blog</span></a>
+                            </li>
+
+                            <li>
+                                <a href="#social"><i class="icon-instagram"></i> <span class="label">Social</span></a>
+                                <div id="social" class="panel">
+                                    <section class="contact">
+                                        <h3>Follow Us On</h3>
+                                        <ul>
+                                            <li><a href="https://www.instagram.com/byuspeccoll/">Instagram</a></li>
+                                            <li><a href="https://twitter.com/BYUSpecColl">Twitter</a></li>
+                                            <li><a href="https://www.facebook.com/BYUSpecialCollections/">Facebook</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+
+                <section class="m-search" aria-label="Search box">
+                    <div class="container">
+                        <div class="searches">
+                            <form class="basic" action="https://search.lib.byu.edu/byu/search" method="get" _lpchecked="1">
+                                <input id="q" name="q" type="text" placeholder="Search Special Collections materials"><input
+                                    type="hidden" name="collection[]" value="lee -- special_collections">
+
+
+                                <button id="searchsubmit" type="submit" value="Search"><span class="icon-search" href=""></span>
+                                    <span class="hidden">Search</span></button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class = "container browse-container">
+                        <div class = "or">OR</div>
+                        <div class="browse-section">
+                            <a href = "browse.html"><button class = "browse-section_button"><b>Browse the Collection</b></button></a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <div class="section service">
+
+
+
+
+                        <div class="page group">
+
+
+                            <div class="service">
+                                <section class="shift">
+                                    <h2>Overview</h2>
+
+
+                                    <ul class="icons features">
+                                        <li><span class="icon-checkmark"></span> Search all manuscripts in Special
+                                            Collections using the <a href="https://findingaid.lib.byu.edu/">Manuscript
+                                                Collection Database</a></li>
+                                        <li><span class="icon-checkmark"></span> Access our <a href="https://lib.byu.edu/collections/digital/">digital
+                                                collections</a></li>
+                                        <li><span class="icon-checkmark"></span> Arrange for your class or group to <a
+                                                href="/services/special-collections-instruction/">receive instruction
+                                                in Special Collections</a></li>
+                                        <li><span class="icon-checkmark"></span> View <a href="/collections/transcriptions/">transcriptions
+                                                of selected materials</a></li>
+                                    </ul>
+
+                                    <p class="call-to-action"><a class="block" href="/services/?area=special-collections">View
+                                            all Special Collections services</a></p>
+                                </section>
+
+
+                                <div class="split">
+                                    <section class="shift">
+                                        <h2>Current Exhibitions</h2>
+
+
+                                        <dl class="labels medium thumbs exhibits">
+
+                                            <dt><img src="https://exhibitsadmin.lib.byu.edu/media/thumbnails/TheFirstVision_AnthonySweat.jpg"
+                                                    alt="icon"></dt>
+                                            <dd>
+                                                <h3><a href="http://exhibits.lib.byu.edu/first-vision/">Pillar of
+                                                        Light: Celebrating 200 Years of the First Vision</a></h3>
+                                                <p class="sub">August 2019&thinsp;–&thinsp;June 2020</p>
+                                                <p class="subsub">Level 1, L. Tom Perry Special Collections Gallery</p>
+                                            </dd>
+
+                                            <dt><img src="https://exhibitsadmin.lib.byu.edu/media/thumbnails/waxshellacvinyl.jpg"
+                                                    alt="icon"></dt>
+                                            <dd>
+                                                <h3>Wax, Shellac, and Vinyl</h3>
+                                                <p class="sub">June 2019&thinsp;–&thinsp;October 2019</p>
+                                                <p class="subsub">Level 3 Gallery</p>
+                                            </dd>
+
+                                        </dl>
+
+                                    </section>
+
+                                    <section class="shift split">
+                                        <h2 id="collecting-areas">Collecting Areas</h2>
+                                        <ul class="links columns">
+
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/19thcentury">19th Century Mormon and
+                                                    Western Manuscripts Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/20thcentury">20th Century Mormon and
+                                                    Western Manuscripts Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/21stcentury">21st Century Mormon and
+                                                    Western Manuscripts Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/americanrareliteraryauthor">American
+                                                    Rare Literary Author Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/artsandcommunications">Arts &amp;
+                                                    Communications Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/speccoll/wordsworth">The Edward M.
+                                                    Rowe Collection of William Wordsworth</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/filmmusic">Film Music Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/fromthevaults">From the Vaults</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/speccoll/melville">The Herman
+                                                    Melville Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/historyofprintingandfinepress">History
+                                                    of Printing and Fine Press Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/historyofscience">History of Science
+                                                    Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="https://sites.lib.byu.edu/harp/">International Harp Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/jfcharrison">JFC Harrison Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/japaneserarebooks">Japanese
+                                                    Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/literarymanuscripts">Literary
+                                                    Manuscripts- Mormon Authors</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/speccoll/alcott">The Louisa May
+                                                    Alcott Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/mormonandwesternpublications">Mormon
+                                                    and Western Publications Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/MSC">Music Special Collections</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/photographs">Photograph Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="https://viola.lib.byu.edu/">Primrose International Harp
+                                                    Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/renaissanceandreformation">Renaissance
+                                                    &amp; Reformation Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/speccoll/burns">The Robert Burns
+                                                    Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/universityarchives">University
+                                                    Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/veteranshistory">Veteran's History
+                                                    Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/victorianandedwardian">Victorian
+                                                    &amp; Edwardian Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/speccoll/whitman">The Walt Whitman
+                                                    Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/folklore">William A. Wilson Folklore
+                                                    Archives</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/womensmanuscripts">Women's
+                                                    Manuscripts Collection</a>
+
+                                            </li>
+
+                                            <li>
+
+                                                <a href="http://guides.lib.byu.edu/yellowstone">Yellowstone Collection</a>
+
+                                            </li>
+
+
+                                        </ul>
+                                    </section>
+
+                                    <section class="shift split">
+                                        <h2>Policies</h2>
+                                        <ul class="links">
+                                            <li><a href="/about/copyright/special-collections/">Digital Collection
+                                                    Copyright Policy</a></li>
+                                            <li><a href="https://files.lib.byu.edu/special-collections/policies/Donating a Rare Book or Manuscript.pdf">Donating
+                                                    a Rare Book or Manuscript</a></li>
+                                            <li><a href="https://files.lib.byu.edu/special-collections/policies/Take-down Policy.pdf">Take-down
+                                                    Policy</a></li>
+                                            <li><a href="https://files.lib.byu.edu/special-collections/policies/Restriction Policy.pdf">Restriction
+                                                    Policy</a></li>
+                                            <li><a href="https://files.lib.byu.edu/special-collections/policies/Use Fee Schedule.pdf">Use
+                                                    Fee Schedule</a></li>
+                                            <li><a href="https://files.lib.byu.edu/special-collections/policies/Regulations Regarding Use.pdf">Regulations
+                                                    Regarding Use</a></li>
+                                            <li><a href="https://files.lib.byu.edu/special-collections/policies/Processing Manual.pdf">Processing
+                                                    Manual</a></li>
+                                            <li><a href="/special-collections/collecting-policies/">Collecting Policies</a></li>
+                                        </ul>
+                                    </section>
+
+
+                                    <section class="shift split">
+                                        <h2>Blog</h2>
+
+                                        <dl class="labels medium thumbs">
+
+                                            <dt><img src="https://media.lib.byu.edu/assets/images/special-collections/blogthumb.png"
+                                                    alt="icon"></dt>
+                                            <dd>
+                                                <h3><a href="https://sites.lib.byu.edu/special-collections/2019/09/26/link-to-recording-of-steven-c-harper-lecture-on-first-vision-and-memory/">Link
+                                                        to recording of Steven C. Harper lecture on First Vision and
+                                                        memory</a></h3>
+                                                <p class="sub">September 26, 2019</p>
+                                                <p class="subsub">Ryan K. Lee</p>
+                                            </dd>
+
+                                            <dt><img src="https://media.lib.byu.edu/assets/images/special-collections/blogthumb.png"
+                                                    alt="icon"></dt>
+                                            <dd>
+                                                <h3><a href="https://sites.lib.byu.edu/special-collections/2019/09/16/historic-clothing-and-classic-literature/">Historic
+                                                        Clothing and Classic Literature</a></h3>
+                                                <p class="sub">September 16, 2019</p>
+                                                <p class="subsub">Maggie Kopp</p>
+                                            </dd>
+
+                                        </dl>
+                                    </section>
+
+
+                                    <section class="shift split">
+                                        <h2>Upcoming Events</h2>
+
+
+                                        <p>No upcoming events.</p>
+
+                                    </section>
+
+                                    <section class="shift split">
+                                        <h2>Forms &amp; Applications</h2>
+                                        <ul class="links">
+                                            <li><a href="/special-collections/copy-requests/">Copy Requests</a></li>
+                                            <li><a href="/special-collections/folklore-forms/">Folklore Forms</a></li>
+                                            <li><a href="/services/charles-redd-fellowship-award/">Redd Fellowship</a></li>
+                                            <li><a href="/services/special-collections-undergraduate-fellowship/">Undergraduate
+                                                    Fellowship</a></li>
+                                            <li><a href="/services/special-collections-internships/">Internship
+                                                    Applications</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="section featured service">
+                    <span class="icon icon-question3"></span>
+                    <div class="container">
+                        <section class="shift minheight">
+                            <h2>Frequently Asked Questions</h2>
+                            <ul class="links">
+                                <li><a href="/faq/455328/">Where is Special Collections?</a></li>
+                                <li><a href="/faq/301939/">Special Collections Copying</a></li>
+                                <li><a href="/faq/301932/">High resolution scanning of Special Collections materials</a></li>
+                                <li><a href="/faq/371480/">How do I view historical photographs or images in Special
+                                        Collections?</a></li>
+                                <li><a href="/faq/254360/">What is the Americana collection?</a></li>
+                                <li><a href="/faq/topics/49162/">See all FAQs</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="section featured blue service">
+                    <span class="icon icon-link"></span>
+                    <div class="container">
+                        <section class="shift minheight">
+                            <h2>Additional Resources</h2>
+                            <ul class="links">
+                                <li><a href="http://conservators.byu.edu/">Conservation Information</a></li>
+                                <li><a href="https://lib.byu.edu/special-collections/history/">History of Special
+                                        Collections</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+
+
+
+            </section>
+
+            <footer class="g-footer" role="contentinfo">
+                <div class="container">
+                    <ul class="menu">
+                        <li><a href="//lib.byu.edu/">Home</a></li>
+                        <li><a href="//lib.byu.edu/site-index/">Site Index</a></li>
+                        <li class="social tight"><a href="https://www.facebook.com/byuhbll"><span class="icon-facebook2"></span>
+                                <span class="hidden">Facebook</span></a></li>
+                        <li class="social"><a href="https://twitter.com/hbll"><span class="icon-twitter2"></span> <span
+                                    class="hidden">Twitter</span></a></li>
+                        <li class="social"><a href="https://www.youtube.com/user/hbllproduction"><span class="icon-youtube"></span>
+                                <span class="hidden">YouTube</span></a></li>
+                        <li class="more"><a href="//lib.byu.edu/about/social-media/">more</a></li>
+                    </ul>
+
+                    <address class="address">
+                        P.O. Box 26800, Provo, UT 84602-6800<br>
+                        (801) 422-2927
+                    </address>
+
+                    <p class="copyright"><a href="//lib.byu.edu/about/copyright/" title="Copyright and Use Information">©
+                            2019</a> <a href="http://www.byu.edu/">Brigham Young University</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- SiteCatalyst code version: G.9.
+Copyright 1997-2004 Omniture, Inc. More info available at
+http://www.omniture.com -->
+    <script language="JavaScript" type="text/javascript">
+        var s_pageName = 'HBLL - Services - Special Collections';
+
+        var s_channel = 'HBLL Main Site';
+
+        var s_server = 'lib.byu.edu';
+        var s_pageType = s_prop1 = s_prop2 = s_prop3 = s_prop4 = s_prop5 = '';
+//--></script>
+    <script language="JavaScript" src="https://media.lib.byu.edu/assets/js/omniture/s_code_remote.js" type="text/javascript"></script><img
+        name="s_i_byuhbll" height="1" width="1" border="0" alt="" src="https://102.112.2O7.net/b/ss/byuhbll/1/G.9-Pd-R/s93396185093136?[AQB]&amp;ndh=1&amp;t=30/8/2019%2015%3A19%3A26%201%20360&amp;pageName=HBLL%20-%20Services%20-%20Special%20Collections&amp;g=https%3A//lib.byu.edu/special-collections/&amp;r=https%3A//www.google.com/&amp;ch=HBLL%20Main%20Site&amp;server=lib.byu.edu&amp;s=1280x720&amp;c=24&amp;j=1.3&amp;v=N&amp;k=Y&amp;bw=1280&amp;bh=610&amp;p=Chrome%20PDF%20Plugin%3BChrome%20PDF%20Viewer%3BNative%20Client%3B&amp;[AQE]">
+    <!-- End SiteCatalyst code version: G.9. -->
+
+
+</body>
+
+</html>

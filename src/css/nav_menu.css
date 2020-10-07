@@ -1,0 +1,59 @@
+.sidebar {
+    background-color: #e8e8e8;
+    min-height: 100%; 
+}
+.sidebar_grid {
+    padding-top: 10px !important;
+}
+.sidebar_settings {
+    margin-left: 25px;
+}
+.sidebar-profile-pic {
+    object-fit: cover;
+    object-position: center center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    float: left;
+}
+.sidebar_user-data {
+    margin-top: 30px !important;
+    margin-left: 10px !important;
+}
+.user-data_text {
+    margin-top: 20px !important;
+    text-align: center;
+}
+.user-data_text:hover {
+    text-decoration: underline;
+}
+.user-data_name {
+    width: 100%;
+    margin-left: 10px
+}
+.user-data_username {
+    width: 100%;
+    margin-left: 10px;
+}
+.sidebar_menu {
+    text-align: center;
+    width: 100%;
+}
+#main_content {
+    display: flex;
+    height: fit-content;
+}
+#main-section {
+    flex: 1;
+    height: 100%;
+    width: 100%; 
+}
+#sidebar-section {
+    flex: 0 0 15%;
+}

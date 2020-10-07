@@ -1,0 +1,13 @@
+
+#main_content {
+    margin-top: 80px;
+}
+.sign_up_link {
+    margin: 30px;
+}
+.sign_up_link:hover {
+    text-decoration: underline;
+}
+.sign_up {
+    visibility: hidden;
+}

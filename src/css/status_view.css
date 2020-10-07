@@ -1,0 +1,10 @@
+.status-section {
+    margin-left: 40px !important;
+}
+.text_attachment {
+    background-color: #858585;
+    text-color: #ffffff;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}

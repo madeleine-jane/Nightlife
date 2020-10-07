@@ -1,0 +1,17 @@
+
+.browse-section_button {
+    font-size: 3rem;
+    padding: 2rem;
+    border-radius: 3px;
+}
+.browse-container {
+    padding-top: 20px;
+    margin: 40px !important;
+
+}
+.or {
+    font-size: 12pt;
+    margin: 10px;
+    font-weight: bold;
+    padding-left: 120px;
+}

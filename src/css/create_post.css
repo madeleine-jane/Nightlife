@@ -1,0 +1,19 @@
+.toolbar_button {
+    float: right;
+    width: 25%;
+    flex: 1;
+}
+.toolbar_icons {
+    flex: 0 0 75%;
+    margin: auto 10;
+}
+.create-post_submit {
+    width: 100%;
+}
+.create-post_toolbar {
+    background-color: white;
+    display:flex;
+}
+.create-post_textarea {
+    border-radius: 7px !important;
+}

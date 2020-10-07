@@ -1,0 +1,32 @@
+<div class="sidebar">
+    <div class="ui grid sidebar_grid">
+        <div class="row sidebar_settings">
+            <i class="large sign out alternate icon" onclick = "signOut()"></i>
+        </div>
+        <div class="row sidebar_user-data">
+            <div class="ui grid user-data_grid" onclick = "navigate('profile', 'profile.html')">
+                <div class="row user-data_image">
+                </div>
+                <div class="row user-data_text ui grid">
+                    <div class="user-data_name"></div>
+                    <div class="user-data_username"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "row sidebar_menu">
+            <div class="ui vertical text menu nav-menu">
+                <a class="item menu-feed" onclick = "navigate('feed', 'main_feed.html')">
+                    Feed
+                </a>
+                <a class="item menu-story" onclick = "navigate('story', 'story_feed.html')">
+                    Story
+                </a>
+                <a class="item menu-profile" onclick = "navigate('profile', 'profile.html')">
+                    Profile
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
